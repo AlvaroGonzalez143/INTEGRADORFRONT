@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="style.css"></link>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Telex&display=swap" rel="stylesheet">
+<head>
+    <title>LA BUENA COMILONA</title>
+    </head>
+    <body>
+        <div class="padre">
+            <header class="cabezera">La Buena Comilona<button class = "btnModal" onclick="mostrar();">
+                <span class="icon">
+                    <svg class="svgico" viewBox="0 0 175 80" width="40" height="40">
+                        <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                        <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                        <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    </svg>
+                </span>
+                <span class="text">MENU</span>
+            </button>
+        </header>
+        <div class="contenedor">
+           <dialog class="modal">
+            <div class="cerrar"><button id = "bot" onclick="cerrar();"><?xml version="1.0" ?><svg id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                .st0{fill:#C93636;}
+                .st1{fill:#FFFFFF;}
+            </style><circle class="st0" cx="64" cy="64" r="64"/><path class="st1" d="M100.3,90.4L73.9,64l26.3-26.4c0.4-0.4,0.4-1,0-1.4l-8.5-8.5c-0.4-0.4-1-0.4-1.4,0L64,54.1L37.7,27.8  c-0.4-0.4-1-0.4-1.4,0l-8.5,8.5c-0.4,0.4-0.4,1,0,1.4L54,64L27.7,90.3c-0.4,0.4-0.4,1,0,1.4l8.5,8.5c0.4,0.4,1.1,0.4,1.4,0L64,73.9  l26.3,26.3c0.4,0.4,1.1,0.4,1.5,0.1l8.5-8.5C100.7,91.4,100.7,90.8,100.3,90.4z"/></svg>
+        </button>
+    </div>
+            <select id = "tipo" class="input" >
+                <option value="Gaseosas">Gaseosas</option>
+                <option value="Hamburguesas">Hamburguesas</option>
+                <option value="Papas">Papas</option>
+            </select>
+            <div id="price"><input id="precio" class="input" placeholder = "precio" type="number" min='0' step="0.001" ><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg class="icone"  aria-hidden="true" fill="#000000" width="40px" height="40px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M541.7 768v-45.3c46.3-2.4 81.5-15 108.7-37.8 27.2-22.8 40.8-53.1 40.8-88.2 0-37.8-11-65.7-35.3-83.4-24.6-20.1-59.8-35.4-111.6-45.3h-2.6V351.8c35.3 5.1 65.3 15 95.1 35.4l43.6-55.5c-43.6-27.9-89.9-42.9-138.8-45.3V256h-40.8v30.3c-40.8 2.4-76.3 15-103.5 37.8-27.2 22.8-40.8 53.1-40.8 88.2s11 63 35.3 80.7c21.7 17.7 59.8 32.7 108.7 42.9v118.5c-38.2-5.1-76.3-22.8-114.2-53.1l-48.9 53.1c48.9 40.5 103.5 63 163.3 68.1V768h41zm2.6-219.6c27.2 7.5 43.6 15 54.4 22.8 8.1 10.2 13.6 20.1 13.6 35.4s-5.5 25.2-19.1 35.4c-13.6 10.2-30.1 15-48.9 17.7V548.4zM449.2 440c-8.1-7.5-13.6-20.1-13.6-32.7 0-15 5.5-25.2 16.2-35.4 13.6-10.2 27.2-15 48.9-17.7v108.6c-27.2-7.8-43.4-15.3-51.5-22.8z"/></svg>
+</input></div>
+            <input id="link" class="input" placeholder = "Imagen(URL)" ></input>
+            <input id="Nombre" class="input" placeholder = "Nombre del Articulo" ></input>
+            <button id="comer" onclick="crearcomida();">CREAR COMILONA</button><button id="comerno" onclick="drop();">Chau Comilona :(</button>
+           </dialog>
+            <div class="lista">
+             <p onclick="dibujoAll();">Todas las categorias</p>
+             <p onclick="mostrarProducto('Hamburguesas');">Hamburguesas</p> 
+             <p onclick="mostrarProducto('Papas');">Papas</p>
+             <p onclick="mostrarProducto('Gaseosas');">Gaseosas</p>
+             <p onclick="orden('mayor');">Mayor Precio</p> 
+             <p onclick="orden('menor');">Menor Precio</p>
+            </div>
+            <div class="com">
+         
+            </div>
+        </div>
+            <footer class="relleno">Autor Gonzalez Alvaro legajo 50042</footer>
+        </div>
+    </body>
+    <script src="functions.js"></script>
+</HTML>
